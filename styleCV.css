@@ -31,7 +31,7 @@ aside .circle /*image ronde*/
       width: 200px;
       height:200px;
 }
-aside h4 /*proprietes des titres dans aside*/
+aside h1 /*proprietes des titres dans aside*/
 {
   font-family:  verdana, arial, sans-serif;
     font-size: 1.5em;
