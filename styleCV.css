@@ -1,0 +1,53 @@
+#bloc_page
+{
+  display: flex;
+}
+
+#nomprenom
+{
+  display: flex;
+}
+
+aside /*proprietes de la boite aside*/
+{
+width: 382px;
+    font-size: 1em;
+    background: #FECA07;
+	text-align: left;
+}
+
+aside .photo /*image centree*/
+{
+  text-align: center;
+}
+
+aside .circle /*image ronde*/
+{
+
+  overflow:hidden;
+      -webkit-border-radius:50%;
+      -moz-border-radius: 50%;
+      border-radius:50%;
+      width: 200px;
+      height:200px;
+}
+aside h4 /*proprietes des titres dans aside*/
+{
+  font-family:  verdana, arial, sans-serif;
+    font-size: 1.5em;
+    background: #404040;
+    color:#FECA07;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+}
+
+aside .icons
+{
+  text-align: center;
+}
+
+#bloc_description
+{
+  display: flex;
+}
