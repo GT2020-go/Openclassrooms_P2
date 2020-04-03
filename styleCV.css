@@ -1,12 +1,13 @@
 #bloc_page
 {
+  font-family:  verdana, arial, sans-serif;
+  color:#404040;
   display: flex;
 }
 
-#nomprenom
-{
-  display: flex;
-}
+
+
+/*--bloc aside a gauche de la page--*/
 
 aside /*proprietes de la boite aside*/
 {
@@ -23,13 +24,13 @@ aside .photo /*image centree*/
 
 aside .circle /*image ronde*/
 {
-
   overflow:hidden;
       -webkit-border-radius:50%;
       -moz-border-radius: 50%;
       border-radius:50%;
-      width: 200px;
-      height:200px;
+      border: 20px;
+      width: 180px;
+      height:180px;
 }
 aside h1 /*proprietes des titres dans aside*/
 {
@@ -47,7 +48,110 @@ aside .icons
   text-align: center;
 }
 
+.icons /*icones representant les loisirs */
+{
+  font-size: 30px;
+}
+
+/*--bloc principal de la page--*/
+
+
+/*--bloc titre de la page--*/
+#nomprenom
+{
+  display: flex;
+  justify-content: center;
+}
+#Prenom
+{
+    font-size: 2em;
+    color:#FECA07;
+    margin-left: 0px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+#Nom
+{
+    font-size: 2em;
+    color:#404040;
+    margin-left: 10px;
+    margin-right: 0px;
+    text-align: left;
+}
+
+#Intro /*phrase d'introduction (sous titre)*/
+{
+    font-size: 1em;
+    color:#404040;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+}
+
+
+/*--bloc articles de la page--*/
 #bloc_description
 {
   display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.categorie
+{
+  display: flex;
+  justify-content: left;
+}
+
+.bloc_puce_datelieu
+{
+  display: inline-block;
+}
+
+.fa-dot-circle /*aligne la 1ere puce avec le titre h2, quelque soit la taille de la puce*/
+{
+  vertical-align: middle;
+  font-size: 1em;
+}
+.fa-circle /*aligne la 2e puce avec le titre h2, quelque soit la taille de la puce*/
+{
+  vertical-align: middle;
+  font-size: 0.5em;
+}
+
+article
+{
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+article i /*couleur des icones des titres dans l'article principal en jaune*/
+{
+  color: #FECA07;
+}
+
+article span /*couleur des puces dans l'article principal en jaune*/
+{
+  color: #FECA07;
+}
+
+.description
+{
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+#formation
+{
+  border-bottom: 2px solid #FECA07;
+}
+#parcours
+{
+  border-bottom: 2px solid #FECA07;
+}
+
+#recommendations
+{
+  border-bottom: 2px solid #FECA07;
 }
