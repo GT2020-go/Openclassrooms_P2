@@ -101,7 +101,7 @@ aside .icons
 .categorie
 {
   display: flex;
-  justify-content: left;
+  justify-content: right;
 }
 
 .bloc_puce_datelieu
@@ -149,6 +149,12 @@ article span /*couleur des puces dans l'article principal en jaune*/
 #parcours
 {
   border-bottom: 2px solid #FECA07;
+}
+
+#bloc_recommendation
+{
+  display: flex;
+  justify-content: space-between;
 }
 
 #recommendations
