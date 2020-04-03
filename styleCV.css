@@ -1,10 +1,19 @@
+@font-face /*choix des polices personalisées*/
+{
+    font-family: 'Roboto-Medium';
+    src: url('Roboto/Roboto-Medium.ttf');
+    font-family: 'Roboto-Thin';
+    src: url('Roboto/Roboto-Thin.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #bloc_page
 {
-  font-family:  verdana, arial, sans-serif;
+  font-family:'Roboto-Medium', arial, sans-serif, verdana;
   color:#404040;
   display: flex;
 }
-
 
 
 /*--bloc aside a gauche de la page--*/
@@ -14,7 +23,7 @@ aside /*proprietes de la boite aside*/
 width: 382px;
     font-size: 1em;
     background: #FECA07;
-	text-align: left;
+	text-align: justify;
 }
 
 aside .photo /*image centree*/
@@ -34,13 +43,25 @@ aside .circle /*image ronde*/
 }
 aside h1 /*proprietes des titres dans aside*/
 {
-  font-family:  verdana, arial, sans-serif;
-    font-size: 1.5em;
+  font-family:'Roboto-Medium', arial, sans-serif, verdana;
+    font-size: 1.2em;
     background: #404040;
     color:#FECA07;
     margin-left: 0px;
     margin-right: 0px;
     text-align: center;
+}
+
+.contact
+{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.apropos
+{
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 aside .icons
@@ -50,44 +71,67 @@ aside .icons
 
 .icons /*icones representant les loisirs */
 {
-  font-size: 30px;
+  font-size: 50px;
 }
 
 /*--bloc principal de la page--*/
-
+#bloc_contenu
+{
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 /*--bloc titre de la page--*/
+header
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
 #nomprenom
 {
   display: flex;
-  justify-content: center;
+  margin-bottom:-45px;
 }
 #Prenom
 {
-    font-size: 2em;
+  font-family:'Roboto-Medium', arial, sans-serif, verdana;
+    font-size: 3.1em;
     color:#FECA07;
     margin-left: 0px;
-    margin-right: 10px;
+    margin-right: 7.5px;
     text-align: right;
 }
 
 #Nom
 {
-    font-size: 2em;
+  font-family:'Roboto-Thin', arial, sans-serif, verdana;
+    font-size: 3em;
     color:#404040;
-    margin-left: 10px;
+    margin-left: 7.5px;
     margin-right: 0px;
     text-align: left;
 }
 
 #Intro /*phrase d'introduction (sous titre)*/
 {
-    font-size: 1em;
+  font-family:'Roboto-Thin', arial, sans-serif, verdana;
+    font-size: 1.5em;
     color:#404040;
     margin-left: 0px;
     margin-right: 0px;
-    text-align: center;
+    text-align: left;
 }
+
+hr /*trait sous phrase intro*/
+{
+  margin-top: -20px;
+  width: 100px;
+  height: 0px;
+  border: 1px #FECA07 solid;
+}
+
 
 
 /*--bloc articles de la page--*/
@@ -95,7 +139,6 @@ aside .icons
 {
   display: flex;
   flex-direction: column;
-  justify-content: left;
 }
 
 .categorie
@@ -120,12 +163,6 @@ aside .icons
   font-size: 0.5em;
 }
 
-article
-{
-  margin-left: 20px;
-  margin-right: 20px
-}
-
 article i /*couleur des icones des titres dans l'article principal en jaune*/
 {
   color: #FECA07;
@@ -142,22 +179,22 @@ article span /*couleur des puces dans l'article principal en jaune*/
   margin-right: 20px
 }
 
-#formation
+#formation_titre
 {
-  border-bottom: 2px solid #FECA07;
+  border-bottom: 1.5px solid #FECA07;
 }
-#parcours
+#experience_titre
 {
-  border-bottom: 2px solid #FECA07;
+  border-bottom: 1.5px solid #FECA07;
 }
 
-#bloc_recommendation
+#recommendations_titre
+{
+  border-bottom: 1.5px solid #FECA07;
+}
+
+#bloc_recommendations
 {
   display: flex;
-  justify-content: space-between;
-}
-
-#recommendations
-{
-  border-bottom: 2px solid #FECA07;
+  justify-content: space-around;
 }
