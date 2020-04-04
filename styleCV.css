@@ -128,10 +128,12 @@ header
 
 hr /*trait sous phrase intro*/
 {
+  margin-left: 0; /*trait aligne a gauche*/
   margin-top: -20px;
   width: 100px;
   height: 0px;
   border: 1px #FECA07 solid;
+  align: left;
 }
 
 
@@ -139,19 +141,26 @@ hr /*trait sous phrase intro*/
 /*--bloc articles de la page--*/
 #bloc_description
 {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns:1fr 1fr 6fr;
 }
 
 .categorie
 {
-  display: flex;
-  justify-content: right;
+display: flex;
+justify-content: space-around;
+}
+
+h2
+{
+  font-size: 1em;
 }
 
 .bloc_puce_datelieu
 {
-  display: inline-block;
+  display: grid;
+  grid-column-start: 1;
+    grid-column-end: 1;
 }
 
 .fa-dot-circle /*aligne la 1ere puce avec le titre h2, quelque soit la taille de la puce*/
@@ -177,8 +186,9 @@ article span /*couleur des puces dans l'article principal en jaune*/
 
 .description
 {
-  margin-left: 20px;
-  margin-right: 20px
+  display: grid;
+  grid-column-start: 3;
+  grid-column-end: 5;
 }
 
 #formation_titre
@@ -199,4 +209,9 @@ article span /*couleur des puces dans l'article principal en jaune*/
 {
   display: flex;
   justify-content: space-around;
+}
+
+h3
+{
+  font-size: 0.8em;
 }
