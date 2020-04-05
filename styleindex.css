@@ -229,10 +229,29 @@
 
 /*Responsive design: */
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1024px)/*responsive ecrans inferieurs a 1024px (smartphones)*/ 
+{
     #bloc_page {
         flex-direction: column;
         justify-content: stretch;
+    }
+
+    #nomprenom {
+        display: flex;
+        flex-direction: column;
+    }
+    #Prenom {
+        font-family: 'Roboto-Thin', arial, sans-serif, verdana;
+        margin-bottom: -40px;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #Nom {
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     aside /*proprietes de la boite aside*/ {
@@ -241,24 +260,60 @@
         flex-direction: column;
     }
 
+    .puce1 {
+        grid-area: puce1;
+    }
+    .puce2 {
+        grid-area: puce2;
+    }
+    .puce3 {
+        grid-area: puce3;
+    }
+
+    .date1 {
+        grid-area: date1;
+    }
+    .date2 {
+        grid-area: date2;
+    }
+    .date3 {
+        grid-area: date3;
+    }
+
+    .contenu1 {
+        grid-area: contenu1;
+    }
+    .contenu2 {
+        grid-area: contenu2;
+    }
+    .contenu3 {
+        grid-area: contenu3;
+    }
+
     .grille_formation {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30px));
+        grid-template-areas: "puce1 date1" "contenu1 contenu1" "puce2 date2" "contenu2 contenu2";
+        grid-template-columns: 30px 1fr;
+        grid-template-rows: repeat(6, minmax(20px, auto));
         grid-gap: 1rem;
     }
 
     .grille_experience {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30px));
+        grid-template-areas: "puce1 date1" "contenu1 contenu1" "puce2 date2" "contenu2 contenu2" "puce3 date3" "contenu3 contenu3";
+        grid-template-columns: 30px 1fr;
+        grid-template-rows: repeat(9, minmax(20px, auto));
         grid-gap: 1rem;
     }
 
     .grille_recommendations {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px));
+        grid-template-areas: "recommendation1" "recommendation2";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, minmax(50px, auto));
         grid-gap: 1rem;
     }
 }
