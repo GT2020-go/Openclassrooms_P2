@@ -35,16 +35,15 @@ aside .photo /*image centree*/
   text-align: center;
 }
 
-aside .circle /*image ronde*/
-{
-  overflow:hidden;
-      -webkit-border-radius:50%;
-      -moz-border-radius: 50%;
-      border-radius:50%;
-      border: 20px;
-      width: 180px;
-      height:180px;
-}
+    aside .circle /*image ronde*/ {
+        overflow: hidden;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        border: 4px solid #daaf12;
+        width: 180px;
+        height: 180px;
+    }
 aside h1 /*proprietes des titres dans aside*/
 {
   font-family:'Roboto-Medium', arial, sans-serif, verdana;
