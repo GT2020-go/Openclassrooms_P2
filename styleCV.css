@@ -67,15 +67,29 @@ aside h1 /*proprietes des titres dans aside*/
   padding-right: 20px;
 }
 
-.loisirs_bloc{
+.loisirs_bloc {
     justify-self: flex-end;
-    margin-bottom:0px;
+    margin-top: auto;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
 }
 
 .icons /*icones representant les loisirs */ 
 {
-    font-size: 50px;
+    font-size: 2.5em;
     text-align: center;
+}
+
+.icons i {
+    font-size: 0.8em;
+    border-radius: 50%;
+    border: solid #404040;
+    color: #404040;
+    line-height: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    display: inline-block;
 }
 
 /*--bloc principal de la page--*/
