@@ -20,12 +20,14 @@
 
 /*--bloc aside a gauche de la page--*/
 
-aside /*proprietes de la boite aside*/
-{
-width: 382px;
+aside /*proprietes de la boite aside*/ {
+    width: 382px;
     font-size: 1em;
     background: #FECA07;
-	text-align: justify;
+    text-align: justify;
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
 }
 
 aside .photo /*image centree*/
@@ -66,14 +68,15 @@ aside h1 /*proprietes des titres dans aside*/
   padding-right: 20px;
 }
 
-aside .icons
-{
-  text-align: center;
+.loisirs_bloc{
+    justify-self: flex-end;
+    margin-bottom:0px;
 }
 
-.icons /*icones representant les loisirs */
+.icons /*icones representant les loisirs */ 
 {
-  font-size: 50px;
+    font-size: 50px;
+    text-align: center;
 }
 
 /*--bloc principal de la page--*/
@@ -96,21 +99,20 @@ header
   display: flex;
   margin-bottom:-45px;
 }
-#Prenom
-{
-  font-family:'Roboto-Medium', arial, sans-serif, verdana;
-    font-size: 3.1em;
-    color:#FECA07;
+#Prenom {
+    font-family: 'Roboto-Thin', arial, sans-serif, verdana;
+    font-size: 3em;
+    color: #FECA07;
     margin-left: 0px;
     margin-right: 7.5px;
     text-align: right;
 }
 
-#Nom
-{
-  font-family:'Roboto-Thin', arial, sans-serif, verdana;
+#Nom {
+    font-family: 'Roboto-Thin', arial, sans-serif, verdana;
+    font-weight: 200;
     font-size: 3em;
-    color:#404040;
+    color: #404040;
     margin-left: 7.5px;
     margin-right: 0px;
     text-align: left;
@@ -133,85 +135,108 @@ hr /*trait sous phrase intro*/
   width: 100px;
   height: 0px;
   border: 1px #FECA07 solid;
-  align: left;
 }
 
 
 
 /*--bloc articles de la page--*/
-#bloc_description
-{
-  display: grid;
-  grid-template-columns:1fr 1fr 6fr;
+
+/*--new grid system below--*/
+section{
+    display: flex;
+    flex-direction: column;
 }
 
-.categorie
-{
-display: flex;
-justify-content: space-around;
+.grille_formation {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30px auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
 }
 
-h2
-{
-  font-size: 1em;
+.grille_experience {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30px auto 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+.grille_recommendations {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+}
+.puce {
+    vertical-align: top;
+    display: flex;
+    justify-content:center;
 }
 
-.bloc_puce_datelieu
-{
-  display: grid;
-  grid-column-start: 1;
-    grid-column-end: 1;
+.date {
+    vertical-align: top;
 }
 
-.fa-dot-circle /*aligne la 1ere puce avec le titre h2, quelque soit la taille de la puce*/
-{
-  vertical-align: middle;
-  font-size: 1em;
-}
-.fa-circle /*aligne la 2e puce avec le titre h2, quelque soit la taille de la puce*/
-{
-  vertical-align: middle;
-  font-size: 0.5em;
+.contenu {
+    vertical-align: top;
 }
 
-article i /*couleur des icones des titres dans l'article principal en jaune*/
+/*--old below--*/
+
+      
+            h2
+            {
+              font-size: 1em;
+            }
+
+
+            .fa-dot-circle /*aligne la 1ere puce avec le titre h2, quelque soit la taille de la puce*/
+            {
+              vertical-align: middle;
+              font-size: 1em;
+            }
+            .fa-circle /*aligne la 2e puce avec le titre h2, quelque soit la taille de la puce*/ 
+            {
+                vertical-align: middle;
+                font-size: 0.5em;
+            }
+
+            article i /*couleur des icones des titres dans l'article principal en jaune*/
+            {
+              color: #FECA07;
+            }
+
+            article span /*couleur des puces dans l'article principal en jaune*/
+            {
+              color: #FECA07;
+            }
+
+
+
+#formation_titre 
 {
-  color: #FECA07;
+    border-bottom: 2px solid #FECA07;
 }
 
-article span /*couleur des puces dans l'article principal en jaune*/
+#experience_titre 
 {
-  color: #FECA07;
+    border-bottom: 2px solid #FECA07;
 }
 
-.description
+#recommendations_titre 
 {
-  display: grid;
-  grid-column-start: 3;
-  grid-column-end: 5;
-}
-
-#formation_titre
-{
-  border-bottom: 1.5px solid #FECA07;
-}
-#experience_titre
-{
-  border-bottom: 1.5px solid #FECA07;
-}
-
-#recommendations_titre
-{
-  border-bottom: 1.5px solid #FECA07;
+    border-bottom: 2px solid #FECA07;
 }
 
 #bloc_recommendations
-{
-  display: flex;
-  justify-content: space-around;
-}
+            {
+              display: flex;
+              justify-content: space-around;
+            }
 
-h3
-{
-  font-size: 0.8em;
-}
+            h3
+            {
+              font-size: 0.8em;
+            }
