@@ -21,12 +21,14 @@
 
 /*--bloc aside a gauche de la page--*/
 
-aside /*proprietes de la boite aside*/
-{
-width: 382px;
+aside /*proprietes de la boite aside*/ {
+    width: 382px;
     font-size: 1em;
     background: #FECA07;
-	text-align: justify;
+    text-align: justify;
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
 }
 
 aside .photo /*image centree*/
@@ -34,16 +36,15 @@ aside .photo /*image centree*/
   text-align: center;
 }
 
-aside .circle /*image ronde*/
-{
-  overflow:hidden;
-      -webkit-border-radius:50%;
-      -moz-border-radius: 50%;
-      border-radius:50%;
-      border: 20px;
-      width: 180px;
-      height:180px;
-}
+    aside .circle /*image ronde*/ {
+        overflow: hidden;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        border: 4px solid #daaf12;
+        width: 180px;
+        height: 180px;
+    }
 aside h1 /*proprietes des titres dans aside*/
 {
   font-family:'Roboto-Medium', arial, sans-serif, verdana;
@@ -67,14 +68,29 @@ aside h1 /*proprietes des titres dans aside*/
   padding-right: 20px;
 }
 
-aside .icons
-{
-  text-align: center;
+.loisirs_bloc {
+    justify-self: flex-end;
+    margin-top: auto;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
 }
 
-.icons /*icones representant les loisirs */
+.icons /*icones representant les loisirs */ 
 {
-  font-size: 50px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.icons i {
+    font-size: 0.8em;
+    border-radius: 50%;
+    border: solid #404040;
+    color: #404040;
+    line-height: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    display: inline-block;
 }
 
 /*--bloc principal de la page--*/
@@ -97,21 +113,20 @@ header
   display: flex;
   margin-bottom:-45px;
 }
-#Prenom
-{
-  font-family:'Roboto-Medium', arial, sans-serif, verdana;
-    font-size: 3.1em;
-    color:#FECA07;
+#Prenom {
+    font-family: 'Roboto-Thin', arial, sans-serif, verdana;
+    font-size: 3em;
+    color: #FECA07;
     margin-left: 0px;
     margin-right: 7.5px;
     text-align: right;
 }
 
-#Nom
-{
-  font-family:'Roboto-Thin', arial, sans-serif, verdana;
+#Nom {
+    font-family: 'Roboto-Thin', arial, sans-serif, verdana;
+    font-weight: 200;
     font-size: 3em;
-    color:#404040;
+    color: #404040;
     margin-left: 7.5px;
     margin-right: 0px;
     text-align: left;
@@ -129,6 +144,7 @@ header
 
 hr /*trait sous phrase intro*/
 {
+  margin-left: 0; /*trait aligne a gauche*/
   margin-top: -20px;
   width: 100px;
   height: 0px;
@@ -138,66 +154,102 @@ hr /*trait sous phrase intro*/
 
 
 /*--bloc articles de la page--*/
-#bloc_description
-{
-  display: flex;
-  flex-direction: column;
+
+/*--new grid system below--*/
+section{
+    display: flex;
+    flex-direction: column;
 }
 
-.categorie
-{
-  display: flex;
-  justify-content: right;
+.grille_formation {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30px auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
 }
 
-.bloc_puce_datelieu
-{
-  display: inline-block;
+.grille_experience {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30px auto 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+.grille_recommendations {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+.puce {
+    vertical-align: top;
+    display: flex;
+    justify-content:center;
 }
 
-.fa-dot-circle /*aligne la 1ere puce avec le titre h2, quelque soit la taille de la puce*/
-{
-  vertical-align: middle;
-  font-size: 1em;
-}
-.fa-circle /*aligne la 2e puce avec le titre h2, quelque soit la taille de la puce*/
-{
-  vertical-align: middle;
-  font-size: 0.5em;
+.date {
+    vertical-align: top;
 }
 
-article i /*couleur des icones des titres dans l'article principal en jaune*/
-{
-  color: #FECA07;
+.contenu {
+    vertical-align: top;
 }
 
-article span /*couleur des puces dans l'article principal en jaune*/
+/*--old below--*/
+
+      
+            h2
+            {
+              font-size: 1em;
+            }
+
+
+            .fa-dot-circle /*aligne la 1ere puce avec le titre h2, quelque soit la taille de la puce*/
+            {
+              vertical-align: middle;
+              font-size: 1em;
+            }
+            .fa-circle /*aligne la 2e puce avec le titre h2, quelque soit la taille de la puce*/ 
+            {
+                vertical-align: middle;
+                font-size: 0.5em;
+            }
+
+            article i /*couleur des icones des titres dans l'article principal en jaune*/
+            {
+              color: #FECA07;
+            }
+
+            article span /*couleur des puces dans l'article principal en jaune*/
+            {
+              color: #FECA07;
+            }
+
+
+
+#formation_titre 
 {
-  color: #FECA07;
+    border-bottom: 2px solid #FECA07;
 }
 
-.description
+#experience_titre 
 {
-  margin-left: 20px;
-  margin-right: 20px
+    border-bottom: 2px solid #FECA07;
 }
 
-#formation_titre
+#recommendations_titre 
 {
-  border-bottom: 1.5px solid #FECA07;
-}
-#experience_titre
-{
-  border-bottom: 1.5px solid #FECA07;
-}
-
-#recommendations_titre
-{
-  border-bottom: 1.5px solid #FECA07;
+    border-bottom: 2px solid #FECA07;
 }
 
 #bloc_recommendations
-{
-  display: flex;
-  justify-content: space-around;
-}
+            {
+              display: flex;
+              justify-content: space-around;
+            }
+
+            h3
+            {
+              font-size: 0.8em;
+            }

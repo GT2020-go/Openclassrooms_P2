@@ -1,169 +1,229 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
-	<meta charset="utf-8"/>
-	<link rel="stylesheet" href="styleCV.css" />
-	<link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css" />
-	<title>CV Gaëtan Théréau</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styleCV.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css" />
+    <title>CV Gaëtan Théréau</title>
 </head>
 <body>
-	<div id="bloc_page">
+    <div id="bloc_page">
 
 
-<!-- Aside:
-	//Photo
-	//Contact
-	//A propos de moi
-	//Loisirs -->
-		<aside>
-				<p class="photo"><img class="circle" src="img/small_moi.jpg"  alt="Moi" title="C'est moi :D"/></p>
+        <!-- Aside:
+        //Photo
+        //Contact
+        //A propos de moi
+        //Loisirs -->
+        <aside>
+            <p class="photo"><img class="circle" src="img/small_moi.jpg" alt="Moi" title="C'est moi :D" /></p>
 
-				<div id="contact_bloc">
-					<h1 id="contact_titre">CONTACT</h1>
-						<p class="contact">
-							Adresse<br>
-							Wroclaw, Pologne<br>
-							<br>
-							Telephone<br>
-							+48 .........<br>
-							<br>
-							Email<br>
-							gaetan.thereau@gmail.com<br>
-							<br>
-							Site Web<br>
-							www.me.com<br>
-							<br>
-							Skype<br>
-							skypeme<br>
-							<br>
-						</p>
-					</div>
+            <div class="contact_bloc">
+                <h1 id="contact_titre">CONTACT</h1>
+                <p class="contact">
+                    Adresse<br>
+                    Wroclaw, Pologne<br>
+                    <br>
+                    Telephone<br>
+                    +48 .........<br>
+                    <br>
+                    Email<br>
+                    gaetan.thereau@gmail.com<br>
+                    <br>
+                    Site Web<br>
+                    www.me.com<br>
+                    <br>
+                    Skype<br>
+                    skypeme<br>
+                    <br>
+                </p>
+            </div>
 
-					<div id="apropos_bloc">
-						<h1 id="apropos_titre">   A PROPOS DE MOI</h1>
-							<p class="apropos">
-								Actuellement employe chez l'un des principaux sous-traitant automobile francais, mon experience m'a mene dans plusieurs pays et a participer a differents lancements de projets et me permet une grande ouverture d'esprit.
-								Je suis passionne de langues, de voyages et aussi de nouvelles technologies. C'est pourquoi j'ai decide de suivre la formation Developpeur Web en 6 mois chez Openclassrooms depuis Avril 2020.
-							</p>
-						</div>
+            <div class="apropos_bloc">
+                <h1 id="apropos_titre">   A PROPOS DE MOI</h1>
+                <p class="apropos">
+                    Actuellement employe chez l'un des principaux sous-traitant automobile francais, mon experience m'a mene dans plusieurs pays et a participer a differents lancements de projets et me permet une grande ouverture d'esprit.
+                    Je suis passionne de langues, de voyages et aussi de nouvelles technologies. C'est pourquoi j'ai decide de suivre la formation Developpeur Web en 6 mois chez Openclassrooms depuis Avril 2020.
+                </p>
+            </div>
 
-					<div id="loisirs_bloc">
-						<h1 id="loisirs_titre">   LOISIRS</h1>
-							<div class="icons">
-								<i class="fas fa-laptop-code" title="code"></i>
-								<i class="fas fa-running" title="running"></i>
-								<i class="fas fa-language" title="langues"></i>
-							</div>
-						</div>
-		</aside>
+            <div class="loisirs_bloc">
+                <h1 id="loisirs_titre">   LOISIRS</h1>
+                <div class="icons">
+                    <i class="fas fa-laptop-code" title="code"></i>
+                    <i class="fas fa-running" title="running"></i>
+                    <i class="fas fa-language" title="langues"></i>
+                </div>
+            </div>
+        </aside>
 
-			<div id="bloc_contenu">
-					<!-- header:
-					// NomPrenom
-					// Soustitre -->
+        <div id="bloc_contenu">
+            <!-- header:
+            // NomPrenom
+            // Soustitre -->
 
-							<header> <!--Header-->
-								<div id="nomprenom">
-									<h1 id="Prenom">GAETAN </h1><h1 id="Nom">THEREAU</h1>
-								</div>
-								<h2 id="Intro"> Etudiant Openclassrooms</h2>
-							</header>
-							<hr align="left"><!-- Trait sous le sous-titre -->
+            <header>
+                <!--Header-->
+                <div id="nomprenom">
+                    <h1 id="Prenom">GAETAN </h1><h1 id="Nom">THEREAU</h1>
+                </div>
+                <h2 id="Intro"> Etudiant Openclassrooms</h2>
+            </header>
+            <hr><!-- Trait sous le sous-titre -->
+            <!-- Sections
+            //Formation (dates & lieu / Universite)
+            //Experience professionnelle (dates & lieu / Entreprise)
+            //Recommendations (apropos) -->
+            <section>
+                <article class="formation">
+                    <h1 id="formation_titre"> <i class="fas fa-graduation-cap"></i> FORMATION</h1>
 
-						<!-- Sections
-							//Formation (dates & lieu / Universite)
-							//Experience professionnelle (dates & lieu / Entreprise)
-							//Recommendations (apropos) -->
-					<section>
-						<article class="formation">
-							<h1 id="formation_titre"> <i class="fas fa-graduation-cap"></i> FORMATION</h1>
-							<div id="bloc_description">
-								<div class="categorie">
-									<div class="bloc_puce_datelieu">
-										<h2 class="datelieu"><span class="far fa-dot-circle"></span> 2020 - Openclassrooms</h2>
-									</div>
+                    <div class="grille_formation">
+                        <!--	ma grille:
+                            <div class="puce puce1">puce1</div>
+                            <div class="date date1">date1</div>
+                            <div class="contenu contenu1">contenu1</div>
+                            <div class="puce puce2">puce2</div>
+                            <div class="date date2">date2</div>
+                            <div class="contenu contenu2">contenu2</div>
+                        -->
 
-									<div class="description">
-										<h2>BLABLA TITLE2</h2>
-										<p>
-											parcours Developpeur Web en 6 mois.
-											Apprentissage des languages web HTML5, CSS3 et Javascript au travers de la realisation de 7 projets.
-										</p>
-									</div> <!--class=description!-->
-								</div> <!--class=categorie!-->
+                        <div class="puce puce1">
+                            <h2><i class="far fa-dot-circle"></i></h2>
+                        </div>
 
-									<div class="categorie">
-										<div class="bloc_puce_datelieu">
-											<h2 class="datelieu"><span class="fas fa-circle"></span> 2020 - Openclassrooms</h2>
-										</div>
-										<div class="description">
-											<h2>BLABLA TITLE3</h2>
-											<p>
-												parcours Developpeur Web en 6 mois.
-												Apprentissage des languages web HTML5, CSS3 et Javascript au travers de la realisation de 7 projets.
-											</p>
-										</div>
-									</div>
-						</div>
-						</article>
+                        <div class="date date1">
+                            <h2>Avril 2020 - 6 mois</h2>
+                            <p>Formation en ligne</p>
+                        </div>
 
-						<article class="experience">
-							<h1 id="experience_titre"> <i class="fas fa-briefcase"></i> EXPERIENCE PROFESSIONNELLE</h1>
-							<div id="bloc_description">
-									<div class="categorie">
-										<div class="bloc_puce_datelieu">
-											<h2 class="datelieu"><span class="far fa-dot-circle"></span> 2020 - Openclassrooms</h2>
-										</div>
-										<div class="description">
-											<h2>BLABLA TITLE2</h2>
-											<p>
-												parcours Developpeur Web en 6 mois.
-												Apprentissage des languages web HTML5, CSS3 et Javascript au travers de la realisation de 7 projets.
-											</p>
-										</div>
-									</div>
-									<div class="categorie">
-										<div class="bloc_puce_datelieu">
-											<h2 class="datelieu"><span class="fas fa-circle"></span> 2020 - Openclassrooms</h2>
-										</div>
-										<div class="description">
-											<h2>BLABLA TITLE3</h2>
-											<p>
-												parcours Developpeur Web en 6 mois.
-												Apprentissage des languages web HTML5, CSS3 et Javascript au travers de la realisation de 7 projets.
-											</p>
-										</div>
-									</div>
-						</div>
-						</article>
+                        <div class="contenu contenu1">
+                            <h2>Formation Developpeur Web</h2>
+                            <h3>Openclassrooms</h3>
+                            <p>
+                                Apprentissage des languages web HTML5, CSS3 et Javascript au travers de la realisation de 7 projets. <br />
+                                Ayant plus de temps libre grace au home office, et devant rester chez moi a cause de l'epidemmie de COVID, j'ai decide de commencer une formation en ligne sur Openclassrooms. C'est un super challenge.
+                            </p>
+                        </div>
 
-						<article class="recommendations">
-							<h1 id="recommendations_titre"><i class="fas fa-pencil-alt"></i> RECOMMENDATIONS</h1>
-							<div id="bloc_recommendations">
-								<div id="bloc_recommendation_souscategorie">
-									<h2>Jerome Hernandez</h2>
-									<h3>Mentor Openclassrooms</h3>
-									<p class="recommendation_contact">
-										Adresse: France <br>
-										Telephone: +33 .........<br>
-										Email:gaetan.thereau@gmail.com<br>
-									</p>
-								</div>
-								<div id="bloc_recommendation_souscategorie">
-										<h2>Jerome Hernandez</h2>
-										<h3>Mentor Openclassrooms</h3>
-										<p class="recommendation_contact">
-											Adresse: France <br>
-											Telephone: +33 .........<br>
-											Email:gaetan.thereau@gmail.com<br>
-										</p>
-									</div>
-								</div>
-						</article>
-					</section>
-				</div>
-			</div>
-	</body>
+                        <div class="puce puce2">
+                            <h2><i class="fas fa-circle"></i></h2>
+                        </div>
+                        <div class="date date2">
+                            <h2>2019 - 2020</h2>
+                        </div>
+
+                        <div class="contenu contenu2">
+                            <h2>BLABLA TITLE2</h2>
+                            <p>
+                                Parcours Developpeur Web en 6 mois.
+                                Apprentissage des languages web HTML5, CSS3 et Javascript au travers de la realisation de 7 projets.
+                            </p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="experience">
+                    <h1 id="experience_titre"> <i class="fas fa-briefcase"></i> EXPERIENCE PROFESSIONNELLE</h1>
+
+                    <div class="grille_experience">
+                        <!--	ma grille:
+                            <div class="puce puce1">puce1</div>
+                            <div class="date date1">date1</div>
+                            <div class="contenu contenu1">contenu1</div>
+                            <div class="puce puce2">puce2</div>
+                            <div class="date date2">date2</div>
+                            <div class="contenu contenu2">contenu2</div>
+                            <div class="puce puce3">puce3/div>
+                            <div class="date date3">date3</div>
+                            <div class="contenu contenu3">contenu3</div>
+                        -->
+
+                        <div class="puce puce1">
+                            <h2><i class="far fa-dot-circle"></i></h2>
+                        </div>
+
+                        <div class="date date1">
+                            <h2>Avril 2020 - 6 mois</h2>
+                            <p>Formation en ligne</p>
+                        </div>
+
+                        <div class="contenu contenu1">
+                            <h2>Formation Developpeur Web</h2>
+                            <h3>Openclassrooms</h3>
+                            <p>
+                                Apprentissage des languages web HTML5, CSS3 et Javascript au travers de la realisation de 7 projets. <br />
+                                Ayant plus de temps libre grace au home office, et devant rester chez moi a cause de l'epidemmie de COVID, j'ai decide de commencer une formation en ligne sur Openclassrooms. C'est un super challenge.
+                            </p>
+                        </div>
+
+                        <div class="puce puce2">
+                            <h2><i class="fas fa-circle"></i></h2>
+                        </div>
+                        <div class="date date2">
+                            <h2>2019 - 2020</h2>
+                        </div>
+
+                        <div class="contenu contenu2">
+                            <h2>BLABLA TITLE2</h2>
+                            <p>
+                                Parcours Developpeur Web en 6 mois.
+                                Apprentissage des languages web HTML5, CSS3 et Javascript au travers de la realisation de 7 projets.
+                            </p>
+                        </div>
+
+                        <div class="puce puce3">
+                            <h2><i class="fas fa-circle"></i></h2>
+                        </div>
+                        <div class="date date3">
+                            <h2>2019 - 2020</h2>
+                        </div>
+
+                        <div class="contenu contenu3">
+                            <h2>BLABLA TITLE2</h2>
+                            <p>
+                                Parcours Developpeur Web en 6 mois.
+                                Apprentissage des languages web HTML5, CSS3 et Javascript au travers de la realisation de 7 projets.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="recommendations">
+                    <h1 id="recommendations_titre"><i class="fas fa-pencil-alt"></i> RECOMMENDATIONS</h1>
+
+                    <div class="grille_recommendations">
+                        <!--	ma grille:
+                        <div class="recommendation recommendation1">recommendation1</div>
+                        <div class="recommendation recommendation2">recommendation2</div>
+                                -->
+                        <div class="recommendation recommendation1">
+                            <h2>Jerome Hernandez</h2>
+                            <h3>Mentor Openclassrooms</h3>
+                            <p class="recommendation_contact">
+                                Adresse: France <br>
+                                Telephone: +33 .........<br>
+                                Email:gaetan.thereau@gmail.com<br>
+                            </p>
+                        </div>
+
+                        <div class="recommendation recommendation2">
+                            <h2>Jerome Hernandez</h2>
+                            <h3>Mentor Openclassrooms</h3>
+                            <p class="recommendation_contact">
+                                Adresse: France <br>
+                                Telephone: +33 .........<br>
+                                Email:gaetan.thereau@gmail.com<br>
+                            </p>
+                        </div>
+
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+</body>
 
 </html>
