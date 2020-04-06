@@ -251,7 +251,9 @@ p {
 
 /*Responsive design: */
 
-@media all and (max-width: 1024px)/*responsive ecrans inferieurs a 1024px (smartphones)*/ 
+
+/*responsive smartphones*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 720px) and (-webkit-min-device-pixel-ratio: 2) 
 {
     #bloc_page {
         flex-direction: column;
@@ -262,6 +264,7 @@ p {
         display: flex;
         flex-direction: column;
     }
+
     #Prenom {
         font-family: 'Roboto-Thin', arial, sans-serif, verdana;
         margin-bottom: -40px;
@@ -283,17 +286,18 @@ p {
         flex-direction: column;
     }
 
-    section h2, h3
-    {
+    section h2, h3 {
         margin-top: -10px;
     }
 
     .puce1 {
         grid-area: puce1;
     }
+
     .puce2 {
         grid-area: puce2;
     }
+
     .puce3 {
         grid-area: puce3;
     }
@@ -301,9 +305,11 @@ p {
     .date1 {
         grid-area: date1;
     }
+
     .date2 {
         grid-area: date2;
     }
+
     .date3 {
         grid-area: date3;
     }
@@ -311,9 +317,11 @@ p {
     .contenu1 {
         grid-area: contenu1;
     }
+
     .contenu2 {
         grid-area: contenu2;
     }
+
     .contenu3 {
         grid-area: contenu3;
     }
