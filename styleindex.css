@@ -155,9 +155,9 @@ p {
 }
 
 hr /*trait sous phrase intro*/ {
-    margin-left: 0; /*trait aligne a gauche*/
+    margin-left: 0px; /*trait aligne a gauche*/
     margin-top: -20px;
-    margin-bottom: 92px;
+    margin-bottom: 80px;
     width: 78px; /*fixe a 78px = maquette*/
     height: 0px;
     border: 1.5px #FECA07 solid;
@@ -175,7 +175,7 @@ hr /*trait sous phrase intro*/ {
     .grille_formation {
         width: 100%;
         display: grid;
-        grid-template-columns: 30px 30% 1fr;
+        grid-template-columns: 30px 25% 1fr;
         grid-template-rows: 1fr auto;
         grid-gap: 1rem;
     }
@@ -183,7 +183,7 @@ hr /*trait sous phrase intro*/ {
     .grille_experience {
         width: 100%;
         display: grid;
-        grid-template-columns: 30px 30% 1fr;
+        grid-template-columns: 30px 25% 1fr;
         grid-template-rows: 1fr auto auto;
         grid-gap: 1rem;
     }
@@ -225,8 +225,11 @@ hr /*trait sous phrase intro*/ {
         font-size: 0.5em;
     }
 
-    article i /*couleur des icones des titres dans l'article principal en jaune*/ {
+    article i /*proprietes des icones des titres dans l'article principal en jaune*/ {
+        font-size: 1.3em;
         color: #FECA07;
+        padding-bottom: 15px;
+        margin-top: auto;
     }
 
  #formation_titre {
@@ -258,7 +261,7 @@ hr /*trait sous phrase intro*/ {
 
 
 /*responsive smartphones*/
-@media all and (min-width: 320px) and (max-width: 720px)
+@media all and (max-width: 720px)
 {
     #bloc_page {
         flex-direction: column;
@@ -266,6 +269,7 @@ hr /*trait sous phrase intro*/ {
     }
 
     #nomprenom {
+        margin-top: 5px;
         display: flex;
         flex-direction: column;
     }
@@ -284,11 +288,43 @@ hr /*trait sous phrase intro*/ {
         margin-right: 0px;
     }
 
+    #Intro /*phrase d'introduction (sous titre)*/ {
+        text-align: center;
+    }
 
+    hr /*trait sous phrase intro*/ {
+        margin-left: auto; /*trait aligne a gauche*/
+    }
     aside /*proprietes de la boite aside*/ {
         width: auto;
         margin: auto;
         flex-direction: column;
+    }
+
+    #bloc_contenu {
+        padding-left: 5px;;
+        padding-right: 5px;;
+    }
+
+    #formation_titre {
+        color: #000000; /*changed color to black = maquette*/
+        font-size: 1.5em;
+        border-bottom: 2px solid #FECA07;
+        text-align: center;
+    }
+
+    #experience_titre {
+        color: #000000; /*changed color to black = maquette*/
+        font-size: 1.5em;
+        border-bottom: 2px solid #FECA07;
+        text-align: center;
+    }
+
+    #recommendations_titre {
+        color: #000000; /*changed color to black = maquette*/
+        font-size: 1.5em;
+        border-bottom: 2px solid #FECA07;
+        text-align: center;
     }
 
     section h2, h3 {
@@ -335,7 +371,7 @@ hr /*trait sous phrase intro*/ {
         width: 100%;
         display: grid;
         grid-template-areas: "puce1 date1" "contenu1 contenu1" "puce2 date2" "contenu2 contenu2";
-        grid-template-columns: 30px 1fr;
+        grid-template-columns: 15px 1fr;
         grid-template-rows: repeat(6, minmax(20px, auto));
         grid-gap: 1rem;
     }
@@ -344,7 +380,7 @@ hr /*trait sous phrase intro*/ {
         width: 100%;
         display: grid;
         grid-template-areas: "puce1 date1" "contenu1 contenu1" "puce2 date2" "contenu2 contenu2" "puce3 date3" "contenu3 contenu3";
-        grid-template-columns: 30px 1fr;
+        grid-template-columns: 15px 1fr;
         grid-template-rows: repeat(9, minmax(20px, auto));
         grid-gap: 1rem;
     }
