@@ -16,12 +16,14 @@
         display: flex;
     }
 
+p {
+    font-size: 1.2em;
+}
 
     /*--bloc aside a gauche de la page--*/
 
     aside /*proprietes de la boite aside*/ {
         width:382px;
-        font-size: 1.2em;
         background: #FECA07;
         text-align: justify;
         display: flex;
@@ -81,7 +83,7 @@
     .icons /*icones representant les loisirs */ {
         display:flex;
         justify-content: space-around;
-        font-size: 2.5em;
+        font-size: 2.8em;
         text-align: center;
     }
 
@@ -110,24 +112,27 @@
         justify-content: left;
     }
 
-    #nomprenom {
-        display: flex;
-        margin-bottom: -45px;
-    }
+#nomprenom {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: -45px;
+}
 
-    #Prenom {
-        font-family: 'Roboto-Thin', arial, sans-serif, verdana;
-        font-size: 3em;
-        color: #FECA07;
-        margin-left: 0px;
-        margin-right: 7.5px;
-        text-align: right;
-    }
+#Prenom {
+    font-family: 'Roboto-Thin', arial, sans-serif, verdana;
+    font-weight: 900;
+    font-size: 4em;
+    color: #FECA07; 
+    margin-left: 0px;
+    margin-right: 7.5px;
+    text-align: right;
+}
 
     #Nom {
         font-family: 'Roboto-Thin', arial, sans-serif, verdana;
-        font-weight: 200;
-        font-size: 3em;
+        font-weight: 100;
+        font-size: 4em;
         color: #000000;
         margin-left: 7.5px;
         margin-right: 0px;
@@ -136,7 +141,7 @@
 
 #Intro /*phrase d'introduction (sous titre)*/ {
     font-family: 'Roboto-Regular', arial, sans-serif, verdana;
-    font-weight: 200; /*taille police plus grande = maquette*/
+    font-weight: 500; /*taille police plus grande = maquette*/
     font-size: 1.7em;
     color: #404040;
     margin-left: 0px;
@@ -147,6 +152,7 @@
     hr /*trait sous phrase intro*/ {
         margin-left: 0; /*trait aligne a gauche*/
         margin-top: -20px;
+        margin-bottom: 92px;
         width: 78px; /*fixe a 78px = maquette*/
         height: 0px;
         border: 1px #FECA07 solid;
@@ -200,7 +206,7 @@
 
 
     h2 {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 
 
@@ -238,7 +244,7 @@
 
 
     h3 {
-        font-size: 1em;
+        font-size: 1.2em;
         font-weight:100;
     }
 
