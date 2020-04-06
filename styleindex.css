@@ -10,6 +10,9 @@
     font-style: normal;
 }
 
+body{
+    margin: 0px;
+}
     #bloc_page {
         font-family: 'Roboto-Medium', arial, sans-serif, verdana;
         color: #404040;
@@ -173,7 +176,7 @@ hr /*trait sous phrase intro*/ {
         width: 100%;
         display: grid;
         grid-template-columns: 30px 30% 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr auto;
         grid-gap: 1rem;
     }
 
@@ -181,7 +184,7 @@ hr /*trait sous phrase intro*/ {
         width: 100%;
         display: grid;
         grid-template-columns: 30px 30% 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto auto;
         grid-gap: 1rem;
     }
 
