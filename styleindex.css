@@ -108,11 +108,6 @@ p {
     }
 
     /*--bloc titre de la page--*/
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-    }
 
 #nomprenom {
     display: flex;
@@ -254,8 +249,143 @@ hr /*trait sous phrase intro*/ {
 /*Responsive design: */
 
 
-/*responsive smartphones*/
+/*responsive width 1200px*/
 @media all and (max-width: 1200px)
+{
+    #bloc_page {
+        flex-direction: column;
+        justify-content: stretch;
+    }
+
+    #nomprenom {
+        justify-content: center;
+    }
+
+    #Intro /*phrase d'introduction (sous titre)*/ {
+        text-align: center;
+    }
+
+    hr /*trait sous phrase intro*/ {
+        margin-left: auto; /*trait aligne a gauche*/
+    }
+    aside /*proprietes de la boite aside*/ {
+        width: auto;
+        margin: auto;
+        flex-flow: row wrap;
+    }
+
+    .photo{
+        width:100%;
+        margin-left:0px;
+        margin-right:0px;
+    }
+    .contact_bloc{
+        width:50%;
+    }
+    .apropos_bloc{
+        width:50%;
+    }
+    .loisirs_bloc{
+        width:100%;
+    }
+
+
+    #bloc_contenu {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #formation_titre {
+        color: #000000; /*changed color to black = maquette*/
+        font-size: 1.5em;
+        border-bottom: 2px solid #FECA07;
+        text-align: center;
+    }
+
+    #experience_titre {
+        color: #000000; /*changed color to black = maquette*/
+        font-size: 1.5em;
+        border-bottom: 2px solid #FECA07;
+        text-align: center;
+    }
+
+    #recommendations_titre {
+        color: #000000; /*changed color to black = maquette*/
+        font-size: 1.5em;
+        border-bottom: 2px solid #FECA07;
+        text-align: center;
+    }
+
+    section h2, h3 {
+        margin-top: -10px;
+    }
+
+    .puce1 {
+        grid-area: puce1;
+    }
+
+    .puce2 {
+        grid-area: puce2;
+    }
+
+    .puce3 {
+        grid-area: puce3;
+    }
+
+    .date1 {
+        grid-area: date1;
+    }
+
+    .date2 {
+        grid-area: date2;
+    }
+
+    .date3 {
+        grid-area: date3;
+    }
+
+    .contenu1 {
+        grid-area: contenu1;
+    }
+
+    .contenu2 {
+        grid-area: contenu2;
+    }
+
+    .contenu3 {
+        grid-area: contenu3;
+    }
+
+    .grille_formation {
+        width: 100%;
+        display: grid;
+        grid-template-areas: "puce1 date1" "contenu1 contenu1" "puce2 date2" "contenu2 contenu2";
+        grid-template-columns: 15px 1fr;
+        grid-template-rows: repeat(6, minmax(20px, auto));
+        grid-gap: 1rem;
+    }
+
+    .grille_experience {
+        width: 100%;
+        display: grid;
+        grid-template-areas: "puce1 date1" "contenu1 contenu1" "puce2 date2" "contenu2 contenu2" "puce3 date3" "contenu3 contenu3";
+        grid-template-columns: 15px 1fr;
+        grid-template-rows: repeat(9, minmax(20px, auto));
+        grid-gap: 1rem;
+    }
+
+    .grille_recommendations {
+        width: 100%;
+        display: grid;
+        grid-template-areas: "recommendation1" "recommendation2";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, minmax(50px, auto));
+        grid-gap: 1rem;
+    }
+}
+
+/*responsive smaller screens*/
+@media all and (max-width: 720px)
 {
     #bloc_page {
         flex-direction: column;
@@ -293,7 +423,20 @@ hr /*trait sous phrase intro*/ {
         margin: auto;
         flex-direction: column;
     }
-
+    .photo{
+        width:100%;
+        margin-left:0px;
+        margin-right:0px;
+    }
+    .contact_bloc{
+        width:100%;
+    }
+    .apropos_bloc{
+        width:100%;
+    }
+    .loisirs_bloc{
+        width:100%;
+    }
     #bloc_contenu {
         padding-left: 5px;
         padding-right: 5px;
