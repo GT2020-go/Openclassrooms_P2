@@ -278,12 +278,6 @@ section {
     justify-content: center;
 }
 
-.date {}
-
-.titre {}
-
-.contenu {}
-
 h2 {
     font-size: 1.4em;
 }
@@ -528,12 +522,12 @@ h3 {
     }
     .date {
         writing-mode: vertical-rl;
+        /* vertical text */
         transform: rotate(180deg);
         margin-left: auto;
         margin-right: auto;
         margin-top: auto;
-        margin-bottom: 0px;
-        /* vertical text */
+        margin-bottom: 5px;
     }
     .grille_formation {
         width: 100%;
