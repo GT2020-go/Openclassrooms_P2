@@ -2,10 +2,8 @@
 
 @font-face /*choix des polices personalisées*/
 {
-    font-family: 'Roboto-Medium';
-    src: url('Roboto/Roboto-Medium.ttf');
-    font-family: 'Roboto-Thin';
-    src: url('Roboto/Roboto-Thin.ttf');
+    font-family: 'Roboto', sans-serif,verdana,arial;
+    src: url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
     font-weight: normal;
     font-style: normal;
 }
@@ -14,7 +12,7 @@ body{
     margin: 0px;
 }
     #bloc_page {
-        font-family: 'Roboto-Medium', arial, sans-serif, verdana;
+        font-family:'Roboto', sans-serif,verdana,arial;
         color: #404040;
         display: flex;
     }
@@ -54,7 +52,6 @@ p {
         }
 
         aside h1 /*proprietes des titres dans aside*/ {
-            font-family: 'Roboto-Medium', arial, sans-serif, verdana;
             font-size: 1.5em; 
             background: #404040;
             color: #FECA07;
@@ -125,7 +122,6 @@ p {
 }
 
 #Prenom {
-    font-family: 'Roboto-Thin', arial, sans-serif, verdana;
     font-weight: 900;
     font-size: 4em;
     color: #FECA07; 
@@ -135,7 +131,6 @@ p {
 }
 
     #Nom {
-        font-family: 'Roboto-Thin', arial, sans-serif, verdana;
         font-weight: 100;
         font-size: 4em;
         color: #000000;
@@ -145,7 +140,6 @@ p {
     }
 
 #Intro /*phrase d'introduction (sous titre)*/ {
-    font-family: 'Roboto-Regular', arial, sans-serif, verdana;
     font-weight: 500; /*taille police plus grande = maquette*/
     font-size: 1.7em;
     color: #404040;
@@ -275,7 +269,6 @@ hr /*trait sous phrase intro*/ {
     }
 
     #Prenom {
-        font-family: 'Roboto-Thin', arial, sans-serif, verdana;
         margin-bottom: -40px;
         text-align: center;
         margin-left: 0px;
