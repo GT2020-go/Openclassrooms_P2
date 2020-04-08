@@ -276,6 +276,7 @@ section {
 .puce {
     display: flex;
     justify-content: center;
+    align-self: start;
 }
 
 h2 {
@@ -521,27 +522,29 @@ h3 {
         text-align: center;
     }
     .date {
+        display: flex;
         writing-mode: vertical-rl;
         /* vertical text */
         transform: rotate(180deg);
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: 5px;
+        -webkit-transform: rotate(180deg);
+        padding-top: auto;
+        padding-bottom: 10px;
+        justify-content: stretch;
+        align-self: stretch;
     }
     .grille_formation {
         width: 100%;
         display: grid;
         grid-template-areas: "date1 titre1" "date1 contenu1" "puce1 contenu1" "date2 titre2" "date2 contenu2" "puce2 contenu2";
-        grid-template-columns: 20% auto;
-        grid-template-rows: 1fr auto 50px;
+        grid-template-columns: minmax(80px, auto);
+        grid-template-rows: 1fr minmax(180px, auto) 50px;
     }
     .grille_experience {
         width: 100%;
         display: grid;
         grid-template-areas: "date1 titre1" "date1 contenu1" "puce1 contenu1" "date2 titre2" "date2 contenu2" "puce2 contenu2" "date3 titre3" "date3 contenu3" "puce3 contenu3";
-        grid-template-columns: 20% auto;
-        grid-template-rows: 1fr auto 50px;
+        grid-template-columns: minmax(80px, auto);
+        grid-template-rows: 1fr minmax(180px, auto) 50px;
     }
     /* .grille_formation {
         width: 100%;
