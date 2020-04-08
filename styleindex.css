@@ -35,8 +35,6 @@ p {
         aside .photo /*image centree*/ {
             text-align: center;
             /*position exacte de l'image = maquette*/
-            margin-left: 78px;
-            margin-right: 80px;
             margin-top: 62px;
             margin-bottom: 40px;
         }
@@ -276,8 +274,6 @@ hr /*trait sous phrase intro*/ {
 
     .photo{
         width:100%;
-        margin-left:0px;
-        margin-right:0px;
     }
     .contact_bloc{
         width:50%;
