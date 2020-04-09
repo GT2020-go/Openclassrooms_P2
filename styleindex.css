@@ -21,7 +21,7 @@ body {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 
@@ -69,6 +69,7 @@ aside h1
 
 {
     font-size: 1.5em;
+    font-weight: 400;
     background: #404040;
     color: #FECA07;
     margin-left: 0px;
@@ -83,6 +84,7 @@ aside h1
     /*padding exact = maquette*/
     padding-right: 50px;
     /*padding exact = maquette*/
+    font-weight: 500;
 }
 
 .apropos {
@@ -90,6 +92,11 @@ aside h1
     /*padding exact = maquette*/
     padding-right: 50px;
     /*padding exact = maquette*/
+    font-weight: 400;
+}
+
+#apropos_titre {
+    font-weight: 500;
 }
 
 .loisirs_bloc {
@@ -108,21 +115,23 @@ aside h1
 {
     display: flex;
     justify-content: space-around;
-    font-size: 2.8em;
+    font-size: 3em;
+    font-weight: 200;
     text-align: center;
     margin-left: 15px;
     margin-right: 15px;
 }
 
 .icons i {
-    font-size: 0.9em;
+    font-size: 0.88em;
+    /*icone max size in circle*/
     border-radius: 50%;
     border: solid #404040;
     color: #404040;
     line-height: 1.5em;
-    width: 66px;
+    width: 61.5px;
     /*dimmensions exactes = maquette*/
-    height: 66px;
+    height: 61.5px;
     /*dimmensions exactes = maquette*/
     text-align: center;
     display: inline-block;
@@ -147,7 +156,7 @@ aside h1
 }
 
 #Prenom {
-    font-weight: 900;
+    font-weight: 400;
     font-size: 4em;
     color: #FECA07;
     margin-left: 0px;
@@ -156,7 +165,7 @@ aside h1
 }
 
 #Nom {
-    font-weight: 100;
+    font-weight: 200;
     font-size: 4em;
     color: #000000;
     margin-left: 7.5px;
