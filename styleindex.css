@@ -406,7 +406,7 @@ section p {
 /*-----------------------------Responsive design: ---------------------------------*/
 
 
-/*responsive width 1200px*/
+/*responsive width 1200px (iPads)*/
 
 @media all and (max-width: 1200px) {
     #bloc_page {
@@ -470,6 +470,7 @@ section p {
         grid-template-areas: "puce1 date1 titre1" "puce1 date1 contenu1" "puce2 date2 titre2" "puce2 date2 contenu2";
         grid-template-columns: 30px 25% 1fr;
         grid-template-rows: 1fr auto;
+        grid-column-gap: 10px;
     }
     .grille_experience {
         width: 100%;
@@ -477,6 +478,7 @@ section p {
         grid-template-areas: "puce1 date1 titre1" "puce1 date1 contenu1" "puce2 date2 titre2" "puce2 date2 contenu2" "puce3 date3 titre3" "puce3 date3 contenu3";
         grid-template-columns: 30px 25% 1fr;
         grid-template-rows: 1fr auto auto;
+        grid-column-gap: 10px;
     }
     /* .grille_formation {
         width: 100%;
@@ -502,7 +504,7 @@ section p {
 }
 
 
-/*responsive smaller screens*/
+/*responsive smaller screens (phones)*/
 
 @media all and (max-width: 720px) {
     #bloc_page {
