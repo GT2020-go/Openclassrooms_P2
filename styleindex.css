@@ -372,10 +372,14 @@ h3 {
     font-weight: 400;
 }
 
-section h2,
-section h3 {
+section h2 {
     margin-top: 5px;
     margin-bottom: 10px;
+}
+
+section h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 section p {
@@ -390,11 +394,11 @@ section p {
 .recommandation h3 {
     font-size: 1.2em;
     font-weight: 500;
-    line-height: 10px;
+    margin-bottom: 10px;
 }
 
 .recommandation_contact {
-    line-height: 30px;
+    margin-bottom: 10px;
     padding-bottom: 20px;
 }
 
