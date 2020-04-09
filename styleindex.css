@@ -406,6 +406,125 @@ section p {
 /*-----------------------------Responsive design: ---------------------------------*/
 
 
+/*responsive smaller screens (phones)*/
+
+@media only screen and (max-width: 768px) {
+    #bloc_page {
+        flex-direction: column;
+        justify-content: stretch;
+    }
+    #nomprenom {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    #Prenom {
+        margin-bottom: -40px;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #Nom {
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #Intro
+    /*phrase d'introduction (sous titre)*/
+    {
+        text-align: left;
+    }
+    #bloc-intro-trait {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    aside
+    /*proprietes de la boite aside*/
+    {
+        width: auto;
+        margin: auto;
+        flex-direction: column;
+    }
+    .photo {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .contact_bloc {
+        width: 100%;
+    }
+    .apropos_bloc {
+        width: 100%;
+    }
+    .loisirs_bloc {
+        width: 100%;
+    }
+    #bloc_contenu {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #formation_titre {
+        text-align: center;
+    }
+    #experience_titre {
+        text-align: center;
+    }
+    #recommendations_titre {
+        text-align: center;
+    }
+    .date {
+        display: flex;
+        writing-mode: vertical-rl;
+        /* vertical text */
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -webkit-transform-origin: 50% 50% 0;
+        padding-top: auto;
+        padding-bottom: 10px;
+        justify-content: stretch;
+        align-self: stretch;
+    }
+    .grille_formation {
+        width: 100%;
+        display: grid;
+        grid-template-areas: "date1 titre1" "date1 contenu1" "puce1 contenu1" "date2 titre2" "date2 contenu2" "puce2 contenu2";
+        grid-template-columns: minmax(80px, auto);
+        grid-template-rows: 1fr minmax(180px, auto) 50px;
+    }
+    .grille_experience {
+        width: 100%;
+        display: grid;
+        grid-template-areas: "date1 titre1" "date1 contenu1" "puce1 contenu1" "date2 titre2" "date2 contenu2" "puce2 contenu2" "date3 titre3" "date3 contenu3" "puce3 contenu3";
+        grid-template-columns: minmax(80px, auto);
+        grid-template-rows: 1fr minmax(180px, auto) 50px;
+    }
+    /* .grille_formation {
+        width: 100%;
+        display: grid;
+        grid-template-areas: "puce1 date1" "contenu1 contenu1" "puce2 date2" "contenu2 contenu2";
+        grid-template-columns: 15px 1fr;
+        grid-template-rows: repeat(6, minmax(20px, auto));
+        grid-gap: 1rem;
+    }
+    .grille_experience {
+        width: 100%;
+        display: grid;
+        grid-template-areas: "puce1 date1" "contenu1 contenu1" "puce2 date2" "contenu2 contenu2" "puce3 date3" "contenu3 contenu3";
+        grid-template-columns: 15px 1fr;
+        grid-template-rows: repeat(9, minmax(20px, auto));
+        grid-gap: 1rem;
+    }*/
+    .grille_recommendations {
+        width: 100%;
+        display: grid;
+        grid-template-areas: "recommendation1" "recommendation2";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, minmax(50px, auto));
+        grid-gap: 1rem;
+    }
+}
+
+
 /*responsive width 1200px (iPads)*/
 
 @media all and (max-width: 1200px) {
@@ -506,7 +625,7 @@ section p {
 
 /*responsive smaller screens (phones)*/
 
-@media all and (max-width: 720px) {
+@media only screen and (max-width: 800px) {
     #bloc_page {
         flex-direction: column;
         justify-content: stretch;
@@ -576,6 +695,7 @@ section p {
         /* vertical text */
         transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
+        -webkit-transform-origin: 50% 50% 0;
         padding-top: auto;
         padding-bottom: 10px;
         justify-content: stretch;
