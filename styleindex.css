@@ -265,6 +265,7 @@ section {
     grid-template-areas: "puce1 date1 titre1" "puce1 date1 contenu1" "puce2 date2 titre2" "puce2 date2 contenu2";
     grid-template-columns: 30px 25% 1fr;
     grid-template-rows: 1fr auto;
+    grid-column-gap: 1rem;
 }
 
 .grille_experience {
@@ -273,13 +274,13 @@ section {
     grid-template-areas: "puce1 date1 titre1" "puce1 date1 contenu1" "puce2 date2 titre2" "puce2 date2 contenu2" "puce3 date3 titre3" "puce3 date3 contenu3";
     grid-template-columns: 30px 25% 1fr;
     grid-template-rows: 1fr auto auto;
+    grid-column-gap: 1rem;
 }
 
 .grille_recommendations {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
 }
 
 .puce {
@@ -288,8 +289,9 @@ section {
     align-self: start;
 }
 
-h2 {
+.titre h2 {
     font-size: 1.4em;
+    font-weight: 400;
 }
 
 .fa-dot-circle
@@ -310,36 +312,47 @@ article i
 /*proprietes des icones des titres dans l'article principal en jaune*/
 
 {
-    font-size: 1.3em;
+    font-size: 1.35em;
+    /*hauteur des icones*/
     color: #FECA07;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
+    padding-right: 10px;
     margin-top: auto;
 }
 
 #formation_titre {
+    display: flex;
+    align-items: top;
     color: #000000;
     /*changed color to black = maquette*/
-    font-size: 1.5em;
+    font-size: 1.8em;
+    font-weight: 500;
     border-bottom: 2px solid #FECA07;
 }
 
 #experience_titre {
+    display: flex;
+    align-items: top;
     color: #000000;
     /*changed color to black = maquette*/
-    font-size: 1.5em;
+    font-size: 1.8em;
+    font-weight: 500;
     border-bottom: 2px solid #FECA07;
 }
 
 #recommendations_titre {
+    display: flex;
+    align-items: top;
     color: #000000;
     /*changed color to black = maquette*/
-    font-size: 1.5em;
+    font-size: 1.8em;
+    font-weight: 500;
     border-bottom: 2px solid #FECA07;
 }
 
 h3 {
-    font-size: 1.2em;
-    font-weight: 100;
+    font-size: 1em;
+    font-weight: 400;
 }
 
 
@@ -384,8 +397,8 @@ h3 {
         width: 100%;
     }
     #bloc_contenu {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 64px;
+        padding-right: 64px;
     }
     #formation_titre {
         color: #000000;
