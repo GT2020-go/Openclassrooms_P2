@@ -149,11 +149,16 @@ aside h1
 
 /*--bloc titre de la page--*/
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
 #nomprenom {
     display: flex;
     align-items: center;
-    margin-top: 80px;
-    margin-bottom: -45px;
+    margin-top: 32px;
+    margin-bottom: -70px;
 }
 
 #Prenom {
@@ -187,6 +192,11 @@ aside h1
     text-align: left;
 }
 
+#bloc-intro-trait {
+    display: flex;
+    flex-direction: column;
+}
+
 hr
 /*trait sous phrase intro*/
 
@@ -198,7 +208,11 @@ hr
     width: 78px;
     /*fixe a 78px = maquette*/
     height: 0px;
-    border: 1.5px #FECA07 solid;
+    border: 1.2px #FECA07 solid;
+}
+
+#trait {
+    display: flex;
 }
 
 
@@ -382,17 +396,19 @@ h3 {
         flex-direction: column;
         justify-content: stretch;
     }
+    header {
+        justify-content: center;
+    }
     #nomprenom {
         justify-content: center;
     }
     #Intro/*phrase d'introduction (sous titre)*/
     {
-        text-align: center;
+        text-align: left;
     }
-    hr/*trait sous phrase intro*/
-    {
+    #bloc-intro-trait {
         margin-left: auto;
-        /*trait aligne a gauche*/
+        margin-right: auto;
     }
     aside/*proprietes de la boite aside*/
     {
@@ -504,12 +520,11 @@ h3 {
     }
     #Intro/*phrase d'introduction (sous titre)*/
     {
-        text-align: center;
+        text-align: left;
     }
-    hr/*trait sous phrase intro*/
-    {
+    #bloc-intro-trait {
         margin-left: auto;
-        /*trait aligne a gauche*/
+        margin-right: auto;
     }
     aside/*proprietes de la boite aside*/
     {
