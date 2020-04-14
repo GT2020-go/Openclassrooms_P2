@@ -14,10 +14,15 @@ body {
     margin: 0px;
 }
 
-#bloc_page {
+#bloc_page,
+a {
     font-family: 'Roboto', sans-serif, verdana, arial;
     color: #404040;
     display: flex;
+}
+
+a {
+    text-decoration: none;
 }
 
 p {
