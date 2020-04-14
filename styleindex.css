@@ -746,4 +746,11 @@ section p {
         grid-template-rows: repeat(2, minmax(50px, auto));
         grid-gap: 1rem;
     }
+    .grille_recommendations p,
+    .grille_recommendations h3 {
+        padding-left: 90px;
+    }
+    section h1 {
+        padding-left: 20px;
+    }
 }
