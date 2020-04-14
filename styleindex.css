@@ -479,6 +479,7 @@ section p {
         transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
         -webkit-transform-origin: 50% 50% 0;
+        transform-origin: 50% 50% 0;
         padding-top: auto;
         padding-bottom: 10px;
         justify-content: stretch;
@@ -696,6 +697,7 @@ section p {
         transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
         -webkit-transform-origin: 50% 50% 0;
+        transform-origin: 50% 50% 0%;
         padding-top: auto;
         padding-bottom: 10px;
         justify-content: stretch;
