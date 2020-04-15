@@ -186,7 +186,7 @@ header {
     text-align: left;
 }
 
-#Intro
+#intro
 /*phrase d'introduction (sous titre)*/
 
 {
@@ -434,7 +434,7 @@ section p {
         margin-left: 0px;
         margin-right: 0px;
     }
-    #Intro
+    #intro
     /*phrase d'introduction (sous titre)*/
     {
         text-align: left;
@@ -544,7 +544,7 @@ section p {
     #nomprenom {
         justify-content: center;
     }
-    #Intro
+    #intro
     /*phrase d'introduction (sous titre)*/
     {
         text-align: left;
@@ -652,7 +652,7 @@ section p {
         margin-left: 0px;
         margin-right: 0px;
     }
-    #Intro
+    #intro
     /*phrase d'introduction (sous titre)*/
     {
         text-align: left;
