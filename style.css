@@ -504,22 +504,6 @@ section p {
         grid-template-columns: minmax(80px, auto);
         grid-template-rows: 1fr minmax(180px, auto) 50px;
     }
-    /* .grille_formation {
-        width: 100%;
-        display: grid;
-        grid-template-areas: "puce1 date1" "contenu1 contenu1" "puce2 date2" "contenu2 contenu2";
-        grid-template-columns: 15px 1fr;
-        grid-template-rows: repeat(6, minmax(20px, auto));
-        grid-gap: 1rem;
-    }
-    .grille_experience {
-        width: 100%;
-        display: grid;
-        grid-template-areas: "puce1 date1" "contenu1 contenu1" "puce2 date2" "contenu2 contenu2" "puce3 date3" "contenu3 contenu3";
-        grid-template-columns: 15px 1fr;
-        grid-template-rows: repeat(9, minmax(20px, auto));
-        grid-gap: 1rem;
-    }*/
     .grille_recommendations {
         width: 100%;
         display: grid;
@@ -605,22 +589,6 @@ section p {
         grid-template-rows: 1fr auto auto;
         grid-column-gap: 10px;
     }
-    /* .grille_formation {
-        width: 100%;
-        display: grid;
-        grid-template-areas: "puce1 date1" "contenu1 contenu1" "puce2 date2" "contenu2 contenu2";
-        grid-template-columns: 15px 1fr;
-        grid-template-rows: repeat(6, minmax(20px, auto));
-        grid-gap: 1rem;
-    }
-    .grille_experience {
-        width: 100%;
-        display: grid;
-        grid-template-areas: "puce1 date1" "contenu1 contenu1" "puce2 date2" "contenu2 contenu2" "puce3 date3" "contenu3 contenu3";
-        grid-template-columns: 15px 1fr;
-        grid-template-rows: repeat(9, minmax(20px, auto));
-        grid-gap: 1rem;
-    }*/
     .grille_recommendations {
         width: 100%;
         display: grid;
@@ -722,22 +690,6 @@ section p {
         grid-template-columns: minmax(80px, auto);
         grid-template-rows: 1fr minmax(180px, auto) 50px;
     }
-    /* .grille_formation {
-        width: 100%;
-        display: grid;
-        grid-template-areas: "puce1 date1" "contenu1 contenu1" "puce2 date2" "contenu2 contenu2";
-        grid-template-columns: 15px 1fr;
-        grid-template-rows: repeat(6, minmax(20px, auto));
-        grid-gap: 1rem;
-    }
-    .grille_experience {
-        width: 100%;
-        display: grid;
-        grid-template-areas: "puce1 date1" "contenu1 contenu1" "puce2 date2" "contenu2 contenu2" "puce3 date3" "contenu3 contenu3";
-        grid-template-columns: 15px 1fr;
-        grid-template-rows: repeat(9, minmax(20px, auto));
-        grid-gap: 1rem;
-    }*/
     .grille_recommendations {
         width: 100%;
         display: grid;
